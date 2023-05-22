@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "Evogym-env-LLM"
+version = "0.1.0"
+description = ""
+authors = ["Ackey-code <1986ackey@gmail.com>"]
+readme = "README.md"
+packages = [{include = "evogym_env_llm"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.7.1"
+numpy = "^1.24.3"
+ipykernel = "^6.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
