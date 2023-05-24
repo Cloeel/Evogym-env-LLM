@@ -11,7 +11,11 @@ python = "^3.8"
 matplotlib = "^3.7.1"
 numpy = "^1.24.3"
 ipykernel = "^6.23.1"
+notebook = "^6.5.4"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.1"
 
 [build-system]
 requires = ["poetry-core"]
