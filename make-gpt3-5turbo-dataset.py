@@ -51,7 +51,7 @@ for i in range(1, 101):  # a1.json から a100.json までループ
         Text.append(t)
 
     caption = get_caption_by_index(CSV_FILE_PATH, index)
-    system_text = "There is a string of lists, each representing a certain lattice environment as a single block of characters. The '-' is a blank block, 'H' is a hard block, and 'S' is a soft block. The environment represents a stage in a game that progresses from left to right, listed one line at a time, starting from the top of the environment. The blank block '-' means there is nothing.Describe the environment in the given list in about 20 characters. Do not output anything other than a description. The list will be sent to you later."
+    system_text = "The environment in reinforcement learning, where the agent progresses from left to right, is represented by a list of strings, one character per block. The following conditions are applied: '-' is a blank block, 'H' is a hard block, and 'S' is a soft block. The agent can walk on the 'H' and 'S' blocks and can exist in the '-' area. If there is no 'H' or 'S' block under the agent, it will fall. Strings in [0]~[n] of the list must have the same number of characters, and characters other than '-', 'H', and 'S' are not allowed. Return a list that predicts what kind of environment it is from a prompt that describes the given environment. Do not output anything other than a list."
 
     # JSONLファイルに保存するためのデータ作成
     data = {
