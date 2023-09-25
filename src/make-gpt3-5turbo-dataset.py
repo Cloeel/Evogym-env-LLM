@@ -8,7 +8,7 @@ import jsonlines
 import matplotlib.pyplot as plt
 import csv
 CSV_FILE_PATH = './evogym-design-tool/exported/caption.csv'
-JSONL_FILE_PATH = 'dataset/gpt3-5turbo-dataset.jsonl'
+JSONL_FILE_PATH = 'dataset/gpt3-5turbo-dataset-v2.jsonl'
 
 def get_caption_by_index(CSV_FILE_PATH, target_index):
     with open(CSV_FILE_PATH, 'r', encoding='utf-8') as csv_file:
