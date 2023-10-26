@@ -3,7 +3,7 @@ import openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Retrieve fine-tuning job
-response = openai.FineTuningJob.retrieve("ftjob")
+response = openai.FineTuningJob.retrieve(os.getenv("OPENAI_JOB_ID"))
 print(response)
 
 # List 10 fine-tuning jobs
