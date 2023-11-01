@@ -8,7 +8,7 @@ import jsonlines
 import matplotlib.pyplot as plt
 import csv
 CSV_FILE_PATH = './evogym-design-tool/exported/caption-v2.csv'
-JSONL_FILE_PATH = './dataset/gpt3-5turbo-dataset-v4.jsonl'
+JSONL_FILE_PATH = './dataset/gpt3-5turbo-dataset-v5.jsonl'
 
 def get_caption_by_index(CSV_FILE_PATH, target_index):
     with open(CSV_FILE_PATH, 'r', encoding='utf-8') as csv_file:
@@ -21,7 +21,7 @@ def get_caption_by_index(CSV_FILE_PATH, target_index):
 
 # open json file
 path = './evogym-design-tool/exported/'
-for i in range(104, 217):  # a104.json から a216.json までループ(100*20sizeのデータセットのみ)
+for i in range(1, 217): 
     print("count:",i)
     index = i
     file_name = f'a{i}.json'
